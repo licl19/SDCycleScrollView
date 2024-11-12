@@ -35,6 +35,7 @@
 #import "TAPageControl.h"
 #import "SDWebImageManager.h"
 #import "UIImageView+WebCache.h"
+#import "SDRTLCollectionViewFlowLayout.h"
 
 #define kCycleScrollViewInitialPageControlDotSize CGSizeMake(10, 10)
 
@@ -131,7 +132,12 @@ NSString * const ID = @"SDCycleScrollViewCell";
 // 设置显示图片的collectionView
 - (void)setupMainView
 {
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    UICollectionViewFlowLayout *flowLayout;
+    if ([UIView appearance].semanticContentAttribute == UISemanticContentAttributeForceRightToLeft) {
+        flowLayout = [[SDRTLCollectionViewFlowLayout alloc] init];
+    } else {
+        flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    }
     flowLayout.minimumLineSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     _flowLayout = flowLayout;

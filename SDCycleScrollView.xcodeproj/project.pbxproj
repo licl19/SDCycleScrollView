@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43F361A42CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F361A22CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.m */; };
 		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
 		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43F361A22CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRTLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		43F361A32CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRTLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
 		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				990141081AC9420E00D0D74F /* SDCycleScrollView.m */,
 				990141091AC9420E00D0D74F /* UIView+SDExtension.h */,
 				9901410A1AC9420E00D0D74F /* UIView+SDExtension.m */,
+				43F361A32CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.h */,
+				43F361A22CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.m */,
 				99E7B30B1AC11F1C009F9A2E /* PageControl */,
 			);
 			path = SDCycleScrollView;
@@ -329,6 +334,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -405,6 +411,7 @@
 				6BAA27FD1EFEA798008693AB /* CustomCollectionViewCell.m in Sources */,
 				990141021AC941FD00D0D74F /* TAAnimatedDotView.m in Sources */,
 				9901410D1AC9420E00D0D74F /* UIView+SDExtension.m in Sources */,
+				43F361A42CE355EC003DCA2C /* SDRTLCollectionViewFlowLayout.m in Sources */,
 				9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */,
 				990141041AC941FD00D0D74F /* TAPageControl.m in Sources */,
 				48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */,
