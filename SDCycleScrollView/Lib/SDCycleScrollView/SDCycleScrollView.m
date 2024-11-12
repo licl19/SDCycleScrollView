@@ -648,13 +648,14 @@ NSString * const ID = @"SDCycleScrollViewCell";
     if (!self.imagePathsGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int itemIndex = [self currentIndex];
     int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
-    
     if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
         TAPageControl *pageControl = (TAPageControl *)_pageControl;
-        pageControl.currentPage = indexOnPageControl;
+        NSInteger currentPage = ([UIView appearance].semanticContentAttribute == UISemanticContentAttributeForceRightToLeft) ? (pageControl.numberOfPages - indexOnPageControl - 1) : indexOnPageControl;
+        pageControl.currentPage = currentPage;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
-        pageControl.currentPage = indexOnPageControl;
+        NSInteger currentPage = ([UIView appearance].semanticContentAttribute == UISemanticContentAttributeForceRightToLeft) ? (pageControl.numberOfPages - indexOnPageControl - 1) : indexOnPageControl;
+        pageControl.currentPage = currentPage;
     }
 }
 
